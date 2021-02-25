@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Emre Özgenç</title>
 </head>
+
 <body>
-    <h1>Test Page</h1>
+
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="#about" class="navbar-link">Hakkımda</a></li>
+                <li class="navbar-item"><a href="#projects" class="navbar-link">Projelerim</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link">İletişim</a></li>
+            </ul>
+        </nav>
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-info">
+                <h1 id="title-1">Emre Özgenç</h1>
+                <h2 id="title-2"></h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ABOUT -->
+        <section id="about" class="about-section">
+            <div class="profile">
+                <img class="profile-img" src="img/profile.jpg" alt="Profile image">
+            </div>
+            <div class="about">
+                <h2 class="about-title">Hakkımda</h2>
+                <p class="about-text">Merhaba, ben Emre. Erciyes Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Java
+                    ve libGDX framework ile mobil ve masaüstü oyunlar geliştiriyorum. Zaman zaman oyunlarım için PHP ile
+                    API'lar yazıyorum ve web tasarımı ile uğraşıyorum. Bunun yanında yeni teknolojilere kendimi adapte
+                    etmeye çalışıyorum.</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects-section">
+            <div class="projects-background">
+                <div class="projects-container">
+                    <div class="project-container">
+                        <div class="project">
+                            <a href="https://github.com/emreozgenc/brain-practice" target="_blank"><img
+                                    class="project-img" src="img/project-img/project-0.png" alt=""></a>
+                            <div class="project-info">
+                                <h3 class="project-title">Brain Practice</h3>
+                                <p class="project-text">Java ve libGDX framework ile yaptığım Android cihazlar için
+                                    klasik hafıza oyunu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="project-container">
+                        <div class="project">
+                            <a href="javascript:void();"><img class="project-img" src="img/profile.jpg" alt=""></a>
+                            <div class="project-info">
+                                <h3 class="project-title">My Project</h3>
+                                <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                                    aspernatur.</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <!-- SOCIAL -->
+        <div class="footer-social">
+            <h3 class="social-title">Sosyal Medya</h3>
+            <ul class="social-list">
+                <li class="social-item"><a href="http://www.instagram.com/emreozgenc_i" class="social-link"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li class="social-item"><a href="http://www.twitter.com/emreozgenc_tw" class="social-link"><i
+                            class="fab fa-twitter"></i></a></li>
+                <li class="social-item"><a href="http://www.github.com/emreozgenc" class="social-link"><i
+                            class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- MAIL -->
+        <div class="footer-mail">
+            <h3 class="mail-title">E-Posta Adresi</h3>
+            <p class="mail-text">emreozgenc@hotmail.com.tr</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
