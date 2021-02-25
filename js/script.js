@@ -12,4 +12,4 @@ const typeFunction = () => {
 
 }
 
-typeFunction();
+setTimeout(typeFunction, 1000);
