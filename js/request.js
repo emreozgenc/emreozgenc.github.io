@@ -1,16 +1,16 @@
 const getProjects = () => {
     var xhttp = new XMLHttpRequest();
 
+    xhttp.open('GET', 'https://emreozgenc.github.io/data/projects.json', true);
     xhttp.onreadystatechange = () => {
-        if(this.readyState == 4 && this.status == 200) {
-            handleProject(xhttp.responseText);
+        if(xhttp.readyState == 4 && xhttp.status == 200) {
+            renderProjects(xhttp.responseText);
         }
     }
-    xhttp.open('GET', '../data/projects.json', true);
     xhttp.send();
 }
 
-const handleProject = (projects) => {
+const renderProjects = (projects) => {
 
     var jProjects = JSON.parse(projects);
     var list = document.getElementById('projects-container');
@@ -35,8 +35,6 @@ const handleProject = (projects) => {
         list.appendChild(cont);
 
     }
-
-
 }
 
 getProjects();
