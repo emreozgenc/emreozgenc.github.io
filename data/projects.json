@@ -12,6 +12,13 @@
         "description" : "Kendimi tanıtmak için oluşturduğum içinde bulunduğunuz sayfa. :)",
         "img" : "img/project-img/emreozgenc.png",
         "url" : "https://github.com/emreozgenc/emreozgenc.github.io"
+    },
+    
+    {
+        "name" : "Yüksel Efe Github Sayfası",
+        "description" : "Arkadaşım için yaptığım web sayfası.",
+        "img" : "img/project-img/yukselefe.png",
+        "url" : "https://github.com/emreozgenc/emreozgenc.github.io"
     }
 
 
